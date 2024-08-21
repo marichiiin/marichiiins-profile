@@ -1,7 +1,16 @@
+:root {
+    /* Colors */
+    --main-bg: #212529;
+    --secondary-bg: #1F2233;
+    --cta-primary: #FDD05A;
+    --cta-secondary: #FBF4E0;
+    --page-number-color: #333856;
+    --font-color: #fff;
 
-
-
-
+    /*Fonts*/
+    --font-logo: 'Raleway';
+    --font-general: 'Roboto';
+}
 
 /*Global*/
 *,
@@ -12,14 +21,19 @@
     box-sizing: border-box;
 }
 
-ul,
-li {
-    /* list-style: none; */
-    /* list-style-type: none; */
+body {
+    color: var(--font-color);
+    background-color: var(--main-bg);
+}
+
+ul {
+    list-style: none;
+    
 }
 
 a {
     text-decoration: none;
+
 }
 
 button {
@@ -36,4 +50,73 @@ img {
 .container {
     width: 1158px;
     margin: 0 auto;
+}
+
+.header {
+    background-color: var(--secondary-bg);
+}
+.nav {
+    display: flex;
+    padding: 30px 0;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: flex;
+    gap: 30px;
+
+}
+
+.nav-item-link {
+    color: var(--font-color);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nav-item-link-active {
+    color: var(--cta-primary);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.nav-logo {
+    color: var(--cta-secondary);
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-logo span {
+    color: var(--cta-primary);
+    font-size: 18px;
+}
+
+.cta {
+    background-color: var(--secondary-bg);
+    border: 1px solid var(--cta-primary);
+    border-radius: 5px;
+    color: var(--cta-primary);
+    font-size: 18px;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+.hero {
+    padding: 200px 0;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.hero-intro {
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+
+.hero-title {
+    font-size: 5rem;
+    padding: 30px 0;
 }
